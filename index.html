@@ -11,6 +11,34 @@
             margin: 0;
         }
 
+        .menu {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #00000000;
+        }
+
+        .botoes {
+            list-style: none;
+            text-decoration: none;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        li {
+            padding: 1em;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
         #home {
             background: rgb(2, 0, 36);
             background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
@@ -36,6 +64,15 @@
 </head>
 
 <body>
+    <nav class="menu">
+        <ul class="botoes">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
     <div id="home">
         <img src="img/moletom.png" />
         <h1>Sub Urban Street | Moda Street Wear</h1>
