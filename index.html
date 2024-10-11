@@ -30,7 +30,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.3);
             z-index: 10;
         }
 
@@ -47,6 +47,7 @@
             text-decoration: none;
             color: #ffffff;
             font-size: 1em;
+            font-weight: bold;
         }
 
         .content {
@@ -56,7 +57,7 @@
             flex: 1;
             width: 100%;
             padding-top: 60px;
-            /* To avoid the content going under the menu */
+            flex-direction: column;
         }
 
         .content img {
@@ -68,7 +69,7 @@
             max-width: 600px;
             margin-left: 20px;
             color: white;
-            text-align: left;
+            text-align: center; /* Centraliza o texto */
         }
 
         h1 {
@@ -79,6 +80,21 @@
         p {
             font-size: 1.2em;
             line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -100,6 +116,7 @@
             <h1>Sub Urban Street | Moda Street Wear</h1>
             <p>A moda urbana redefinida. A Sub Urban Street traz o espírito das ruas para seu guarda-roupa com peças que
                 combinam estilo e conforto, perfeitas para quem vive a cidade intensamente.</p>
+            <a href="#" class="button">Conheça</a>
         </div>
     </div>
 
