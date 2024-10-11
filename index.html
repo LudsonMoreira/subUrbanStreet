@@ -30,7 +30,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 0, 0, 0.1);
             z-index: 10;
         }
 
@@ -57,7 +57,6 @@
             flex: 1;
             width: 100%;
             padding-top: 60px;
-            flex-direction: column;
         }
 
         .content img {
@@ -69,7 +68,7 @@
             max-width: 600px;
             margin-left: 20px;
             color: white;
-            text-align: center; /* Centraliza o texto */
+            text-align: left;
         }
 
         h1 {
@@ -82,19 +81,29 @@
             line-height: 1.6;
         }
 
-        .button {
+        .btn {
             display: inline-block;
             padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 1.2em;
             margin-top: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            text-align: center;
         }
 
-        .button:hover {
-            background-color: #0056b3;
+        .btn:hover {
+            background-color: darkblue;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -116,8 +125,11 @@
             <h1>Sub Urban Street | Moda Street Wear</h1>
             <p>A moda urbana redefinida. A Sub Urban Street traz o espírito das ruas para seu guarda-roupa com peças que
                 combinam estilo e conforto, perfeitas para quem vive a cidade intensamente.</p>
-            <a href="#" class="button">Conheça</a>
         </div>
+    </div>
+
+    <div class="btn-container">
+        <button class="btn">Conheça</button>
     </div>
 
 </body>
