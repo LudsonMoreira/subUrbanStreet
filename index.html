@@ -14,20 +14,31 @@
         #home {
             background: rgb(63, 94, 251);
             background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(92, 5, 120, 1) 49%, rgba(252, 70, 107, 1) 100%);
-            position: relative;
+            position: absolute;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             width: 100%;
             height: 100%;
+            z-index: 0;
+        }
+
+        #home #img {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
         }
     </style>
 </head>
 
 <body>
     <div id="home">
-        <img src="img/moletom.webp" />
+        <div id="img">
+            <img src="img/moletom.webp" />
+        </div>
         <h1>Sub Urban Street | Moda Street Wear</h1>
         <p>A moda urbana redefinida. A Sub Urban Street traz o espírito das ruas para seu guarda-roupa com peças que
             combinam estilo e conforto, perfeitas para quem vive a cidade intensamente.</p>
