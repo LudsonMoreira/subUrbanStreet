@@ -9,56 +9,76 @@
         * {
             padding: 0;
             margin: 0;
-        }
-
-        .menu {
-            position: relative;
-            width: 100%;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #00000000;
-        }
-
-        .botoes {
-            list-style: none;
-            text-decoration: none;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        li {
-            padding: 1em;
-        }
-
-        li a {
-            text-decoration: none;
-            color: #ffffff;
+            box-sizing: border-box;
         }
 
         body {
             background: rgb(2, 0, 36);
             background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            z-index: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 10;
         }
 
-        #img {
-            position: relative;
+        .botoes {
+            list-style: none;
             display: flex;
-            justify-content: flex-start;
+        }
+
+        .botoes li {
+            margin: 0 1em;
+        }
+
+        .botoes li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1em;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
             align-items: center;
-            flex-direction: row;
-            z-index: -1;
+            flex: 1;
+            width: 100%;
+            padding-top: 60px;
+            /* To avoid the content going under the menu */
+        }
+
+        .content img {
+            max-width: 400px;
+            height: auto;
+        }
+
+        .text {
+            max-width: 600px;
+            margin-left: 20px;
+            color: white;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -73,11 +93,15 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
-    
-    <img src="img/moletom.png" />
-    <h1>Sub Urban Street | Moda Street Wear</h1>
-    <p>A moda urbana redefinida. A Sub Urban Street traz o espírito das ruas para seu guarda-roupa com peças que
-        combinam estilo e conforto, perfeitas para quem vive a cidade intensamente.</p>
+
+    <div class="content">
+        <img src="img/moletom.png" alt="Moletom Sub Urban Street">
+        <div class="text">
+            <h1>Sub Urban Street | Moda Street Wear</h1>
+            <p>A moda urbana redefinida. A Sub Urban Street traz o espírito das ruas para seu guarda-roupa com peças que
+                combinam estilo e conforto, perfeitas para quem vive a cidade intensamente.</p>
+        </div>
+    </div>
 
 </body>
 
