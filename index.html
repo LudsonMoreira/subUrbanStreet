@@ -34,6 +34,11 @@
             z-index: 10;
         }
 
+        .menu.scrolled {
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 1;
+        }
+
         .botoes {
             list-style: none;
             display: flex;
@@ -167,6 +172,17 @@
             <div class="item">3</div>
         </div>
     </div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const menu = document.querySelector('.menu');
+            if (window.scrollY > 50) {
+                menu.classList.add('scrolled');
+            } else {
+                menu.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 
 </html>
