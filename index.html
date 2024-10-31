@@ -112,58 +112,6 @@
             width: 100%;
             margin-top: 20px;
         }
-
-        .produtos {
-            position: relative;
-            width: 100%;
-            padding: 20px;
-            color: #ffffff;
-        }
-
-        .produtos h1 {
-            text-align: center;
-            margin: 1em;
-        }
-
-        .grid {
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .item {
-            height: 500px;
-            background-color: #ababab;
-            border: 2px solid #000000;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #333;
-        }
-
-        .item h2 {
-            font-size: 1.5em;
-            text-align: center;
-            color: #ffffff;
-        }
-
-        .produto p {
-            margin: 10px 0;
-        }
-
-        .imagem-produto {
-            width: 100%;
-            height: auto;
-            max-width: 200px;
-            display: block;
-            margin: 10px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
     </style>
 </head>
 
@@ -214,17 +162,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        window.addEventListener('scroll', function () {
-            const menu = document.querySelector('.menu');
-            if (window.scrollY > 100) {
-                menu.classList.add('scrolled');
-            } else {
-                menu.classList.remove('scrolled');
-            }
-        });
-    </script>
 </body>
 
 </html>
